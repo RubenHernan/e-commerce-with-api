@@ -1,0 +1,42 @@
+.home__products{
+    padding:1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.home__form{
+    display: flex;
+    margin-top: 30px;
+}
+
+.home__input{
+    width: 100%;
+    font-family: 'Marcellus', serif;
+    font-size: 14px;
+    padding: 1rem;
+    border: var(--color-grey) 1px solid;
+}
+
+.home__btn{
+    width: 50px;
+    font-size: 18px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    background-color: var(--color-dark);
+}
+
+.list__products{
+    display: grid;
+    justify-items: center;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+
+/* .home__btn:hover{
+    
+} */

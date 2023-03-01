@@ -1,0 +1,53 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Philosopher&display=swap');
+
+
+:root{
+    --color-principal: #A10920;
+    --color-dark: #E9415A;
+    --color-light: #FED0D0;
+    --color-body: #F5F2F2;
+    --color-grey: #c8c5c5;
+    --color-text: #999999;
+
+    --z-index-nav: 5000;
+    --z-index-modal-cart: 3000;
+}
+
+*{
+box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    /* font-family: 'Marcellus', serif; */
+    font-family: 'Philosopher', sans-serif;
+
+}
+
+h1, h2,h3, p, ul {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  ul {
+    padding-left: 0;
+    list-style: none;
+  }
+  img {
+    display: block;
+    width: 100%;
+  }
+  input {
+    outline: none;
+  }
+
+  button {
+    cursor: pointer;
+    font-family: inherit;
+    border: none;
+  }
+  a{
+    text-decoration: none;
+    color: inherit;
+  }

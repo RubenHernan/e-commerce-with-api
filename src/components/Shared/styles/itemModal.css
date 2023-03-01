@@ -1,0 +1,53 @@
+.container__items{
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap:   1rem;
+}
+
+.modal__item--info{
+    display: flex;
+    min-height: 90px;
+    gap: 1rem;
+}
+
+.modal__img{
+    max-width: 100px;
+    display: flex;
+    justify-self: center;
+}
+
+.modal__img img{
+    margin: 0 auto;
+    width: 90%;
+    object-fit: contain;
+}
+
+.modal__text{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap:0.5rem;
+}
+
+.modal__title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.modal__title p{
+    font-size: 14px;
+}
+
+.modal__title i{
+    color: var(--color-dark);
+}
+
+
+.modal__subtotal{
+    display: flex;
+    justify-content: flex-end;
+}

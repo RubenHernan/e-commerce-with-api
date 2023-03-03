@@ -15,7 +15,7 @@ useEffect(() => {
 axios.get(url)
 .then(res => setProduct(res.data))
 .catch(err=>console.log(err))
-}, [])
+}, [id])
 
 
   return (

@@ -108,4 +108,9 @@
    display: flex;
    justify-content: center;
    align-items: center;
+   padding-bottom: 30px;
+}
+
+.form__box a:hover{
+   color: var(--color-principal);
 }

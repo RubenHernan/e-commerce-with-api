@@ -1,0 +1,41 @@
+.product__slider{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.product__slider--mov{
+    display: flex;
+}
+
+.product__slider--img{
+    width: 100%;
+    aspect-ratio: 1.5;
+    padding: 3em;
+}
+
+.product__slider--img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.slider__arrow{
+    cursor: pointer;
+    color: var(--color-dark);
+    position: absolute;
+    top: 42%;
+    font-size: 40px;
+}
+
+.slider__arrow--r{
+    right: 0;
+}
+
+@media  (min-width: 750px) {
+    .product__slider{
+        width: 50%;
+        margin: auto 0;
+    }
+
+}

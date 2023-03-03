@@ -20,9 +20,17 @@ export const getAllProductsThunk = () => (dispatch) => {
         .catch(err => console.log(err))
 }
 
-export const getProductsByName = (title) => dispatch => {
-    const url = `https://e-commerce-api-v2.academlo.tech/api/v1/products?title=${title}`
+export const getProductsByName = (title, category = false) => dispatch => {
 
+let url = "";
+
+if(category){
+    url = `https://e-commerce-api-v2.academlo.tech/api/v1/products?categoryId=${title}`
+
+}else{
+    url = `https://e-commerce-api-v2.academlo.tech/api/v1/products?title=${title}`
+
+}
     axios.get(url)
         .then(res => dispatch(setProducts(res.data)))
         .catch(err => console.log(err))

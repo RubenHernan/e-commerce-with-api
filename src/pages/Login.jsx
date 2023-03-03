@@ -1,13 +1,17 @@
 import axios from 'axios';
-import React from 'react'
+import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { useDispatch } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
+import { getCartThunk } from '../store/slices/cart.slice';
+import { getAllProductsThunk } from '../store/slices/products.slice';
 // import { setIsLogin } from '../store/slices/isLogin.slice';
 import { defaultValues } from '../utils/defaultValues';
 import "./styles/login.css"
 
 const Login = () => {
+
+  const [token, setToken] = useState()
 
   const navigate =  useNavigate();
   const dispatch = useDispatch();
@@ -19,9 +23,11 @@ const Login = () => {
       .then(res => {
         localStorage.setItem('token',res.data.token);
         localStorage.setItem('name', `${res.data.user.firstName} ${res.data.user.lastName}`);
-        // dispatch(setIsLogin(true));
+        setToken(res.data.token);
+        dispatch(getAllProductsThunk());
+        dispatch(getCartThunk());
         navigate("/");
-        console.log(res)})
+        window.location.reload(true);})
       .catch(err => {console.log(err);
       localStorage.clear();})
 
@@ -31,7 +37,7 @@ const Login = () => {
   const { reset,handleSubmit,register } = useForm();
 
 
-  if(isLogin){
+  if(localStorage.getItem('token')){
     return <h1>LOGIN!!</h1>
   }
 
@@ -56,7 +62,7 @@ const Login = () => {
           <button className='form__btn'>Login</button>
         </div>
         <div className='form__box'>
-           <span className='form__span'>Don't have an account? <Link to={"user/register"}>Register</Link></span> 
+           <span className='form__span'>Don't have an account?...<Link to={"/user/register"}> Register</Link></span> 
         </div>
       </form>
     </div>

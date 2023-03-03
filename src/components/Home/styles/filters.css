@@ -1,0 +1,113 @@
+.filter__container{
+    background-color: white;
+    position: fixed ;
+    top: 0;
+    left: 0;
+    transition: left 0.2s;
+    height: 100vh;
+    max-width: 300px;
+    z-index: var(--z-index-modal-filter);
+}
+
+.filter__title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    padding: 1rem 1rem 0.5rem 1rem;
+    font-size: 25px;
+
+
+}
+
+.filter__title h2{
+
+    font-size: 20px;
+    color: var(--color-principal);
+ }
+
+ .filter__title i{
+    display: block;
+cursor: pointer;
+ }
+
+ .filter__title i:hover{
+    color: var(--color-principal);
+     }
+    
+
+ .filter__box{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap:1.5rem
+ }
+
+ .filter__form, .filter__bx{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+ }
+
+ .filter__form,  .filter__cat{
+    transition: height 0.3s;
+    overflow: hidden;
+ }
+
+ .filter__arr{
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+    border-bottom: var(--color-grey) 1px solid;
+ }
+
+ .filter__arr i{
+    font-size: 22px;
+    color: var(--color-principal);
+ }
+
+
+ .form__group{
+    display: grid;
+    gap: 0.3rem;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+ }
+
+ .form__group input {
+    padding: 0.5rem;
+    border: var(--color-grey) 1px solid;
+ }
+
+ .filter__btn button{
+    background-color: var(--color-dark);
+    color: white;
+    padding: 0.5rem 1rem;
+
+ }
+ .filter__cat{
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+ }
+
+ .filter__cat li{
+    cursor: pointer;
+ }
+
+ .filter__cat li:hover{
+    color: var(--color-principal);
+ }
+
+ @media (min-width: 630px) {
+
+    .filter__container{
+
+        position: sticky;
+        max-width: 300px;
+    }
+    .filter__title i{
+        display: none;
+     }
+ }

@@ -11,7 +11,9 @@
     --color-text: #999999;
 
     --z-index-nav: 5000;
+    --z-index-modal-user: 4000;
     --z-index-modal-cart: 3000;
+    --z-index-modal-filter: 2000;
 }
 
 *{

@@ -17,6 +17,7 @@ import { getAllProductsThunk } from './store/slices/products.slice';
 function App() {
   //la peticion se hace en el primer renderizado para evitar posibles bugs
   const dispatch = useDispatch(state => state);
+  
 
   // useSelector(reducer => reducer)
 

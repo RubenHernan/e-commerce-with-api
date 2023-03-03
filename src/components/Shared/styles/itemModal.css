@@ -3,12 +3,20 @@
     padding: 1rem;
     display: flex;
     flex-direction: column;
+    border-top: 1px solid var(--color-grey);
     gap:   1rem;
 }
 
+.container__items:nth-child(1){
+
+    border-top: none;
+ 
+}
+
+
 .modal__item--info{
+    height: 80px;
     display: flex;
-    min-height: 90px;
     gap: 1rem;
 }
 
@@ -44,6 +52,7 @@
 
 .modal__title i{
     color: var(--color-dark);
+    cursor: pointer;
 }
 
 

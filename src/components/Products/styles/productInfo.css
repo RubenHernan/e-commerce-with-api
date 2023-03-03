@@ -36,19 +36,6 @@
     border: var(--color-grey) 1px solid;
 }
 
-.info__img{
-    display: flex;
-    padding-top: 20px;
-    justify-content: center;
-    align-items: center;
-}
-
-.info__img img{
-    padding: 1rem;
-    max-height: 270px;
-    object-fit: contain;
-    max-width: 350px;
-}
 
 .info__details{
     display: flex;
@@ -91,7 +78,7 @@
     gap: 1.5rem;
 }
 
-.card__count span{
+.card__count p{
     display: flex;
     justify-content: center;
     align-items: center;

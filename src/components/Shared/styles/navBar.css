@@ -11,6 +11,10 @@
     border-bottom: var(--color-grey) 1px solid;z-index: var(--z-index-nav);
 }
 
+.nav__logo{
+    cursor: pointer;
+}
+
 .nav__menu li{
    display: flex;
    flex-direction: column;

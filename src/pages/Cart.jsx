@@ -4,7 +4,9 @@ import CartItem from '../components/Cart/CartItem'
 
 const Cart = () => {
  
-   const { cart} = useSelector(state=>state)
+   const { cart} = useSelector(state=>state);
+
+   
   return (
     <div>
         <div>
